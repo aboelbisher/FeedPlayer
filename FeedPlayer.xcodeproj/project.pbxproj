@@ -12,6 +12,11 @@
 		F9F4C1AA20F370F800F04A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F4C1A820F370F800F04A88 /* Main.storyboard */; };
 		F9F4C1AC20F370F900F04A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F4C1AB20F370F900F04A88 /* Assets.xcassets */; };
 		F9F4C1AF20F370F900F04A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F4C1AD20F370F900F04A88 /* LaunchScreen.storyboard */; };
+		F9F4C1BC20F3712100F04A88 /* DiskDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C1B720F3712100F04A88 /* DiskDataCache.swift */; };
+		F9F4C1BD20F3712100F04A88 /* FeedPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C1B820F3712100F04A88 /* FeedPlayer.swift */; };
+		F9F4C1BE20F3712100F04A88 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C1B920F3712100F04A88 /* Help.swift */; };
+		F9F4C1BF20F3712100F04A88 /* VideoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C1BA20F3712100F04A88 /* VideoDownloader.swift */; };
+		F9F4C1C020F3712100F04A88 /* AllmuzePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4C1BB20F3712100F04A88 /* AllmuzePlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F9F4C1AB20F370F900F04A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9F4C1AE20F370F900F04A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9F4C1B020F370F900F04A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F4C1B720F3712100F04A88 /* DiskDataCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskDataCache.swift; sourceTree = "<group>"; };
+		F9F4C1B820F3712100F04A88 /* FeedPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPlayer.swift; sourceTree = "<group>"; };
+		F9F4C1B920F3712100F04A88 /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		F9F4C1BA20F3712100F04A88 /* VideoDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDownloader.swift; sourceTree = "<group>"; };
+		F9F4C1BB20F3712100F04A88 /* AllmuzePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllmuzePlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		F9F4C1A320F370F800F04A88 /* FeedPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F9F4C1B620F3711900F04A88 /* Player */,
 				F9F4C1A420F370F800F04A88 /* AppDelegate.swift */,
 				F9F4C1A620F370F800F04A88 /* ViewController.swift */,
 				F9F4C1A820F370F800F04A88 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				F9F4C1B020F370F900F04A88 /* Info.plist */,
 			);
 			path = FeedPlayer;
+			sourceTree = "<group>";
+		};
+		F9F4C1B620F3711900F04A88 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4C1BB20F3712100F04A88 /* AllmuzePlayer.swift */,
+				F9F4C1B720F3712100F04A88 /* DiskDataCache.swift */,
+				F9F4C1B820F3712100F04A88 /* FeedPlayer.swift */,
+				F9F4C1B920F3712100F04A88 /* Help.swift */,
+				F9F4C1BA20F3712100F04A88 /* VideoDownloader.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F4C1BF20F3712100F04A88 /* VideoDownloader.swift in Sources */,
+				F9F4C1BE20F3712100F04A88 /* Help.swift in Sources */,
+				F9F4C1BD20F3712100F04A88 /* FeedPlayer.swift in Sources */,
+				F9F4C1BC20F3712100F04A88 /* DiskDataCache.swift in Sources */,
 				F9F4C1A720F370F800F04A88 /* ViewController.swift in Sources */,
 				F9F4C1A520F370F800F04A88 /* AppDelegate.swift in Sources */,
+				F9F4C1C020F3712100F04A88 /* AllmuzePlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H294CH7FYG;
 				INFOPLIST_FILE = FeedPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H294CH7FYG;
 				INFOPLIST_FILE = FeedPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
