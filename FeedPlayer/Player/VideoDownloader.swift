@@ -561,7 +561,11 @@ class VideoDownloader : NSObject , URLSessionDataDelegate, NSCacheDelegate , Con
     {
         if self.options.debug
         {
-            print(classRef: self, txt: "did become invalid with error : \(error)", type: .error)
+            if let _err = error
+            {
+                print(classRef: self, txt: "did become invalid with error : \(_err.localizedDescription)", type: .error)
+
+            }
         }
     }
     
@@ -578,7 +582,11 @@ class VideoDownloader : NSObject , URLSessionDataDelegate, NSCacheDelegate , Con
     {
         if self.options.debug
         {
-            print(classRef: self, txt: "didCompleteWithError : error ? : \(error)", type: .info)
+            if let _err = error
+            {
+                print(classRef: self, txt: "didCompleteWithError : error ? : \(_err.localizedDescription)", type: .info)
+
+            }
         }
     }
     
