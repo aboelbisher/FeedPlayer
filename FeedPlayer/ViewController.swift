@@ -21,11 +21,8 @@ extension Int
 class ViewController: UIViewController
 {
     
-    let arr = [("https://djv923km0vre4.cloudfront.net/v1_processed_EFB6B787-10FB-4F33-A43D-40E23BB6193E_1530991938382_59e0adfc33c76f2e2cf40038.mp4", 72),
-               ("https://djv923km0vre4.cloudfront.net/v1_processed_78F9BA4C-2B4B-477D-B47F-9710721EEB56_1530961033134_59e0adfc33c76f2e2cf40038.mp4" , 93) ,
-               ("https://djv923km0vre4.cloudfront.net/v1_processed_DCA5C5A2-221D-4FE4-BCCA-3EC0030E588F_1530790077587_59e0adfc33c76f2e2cf40038.mp4", 96) ,
-               ("https://djv923km0vre4.cloudfront.net/v1_processed_84984F07-EF3D-4B18-97FD-6F39A53FDFC1_1530729479669_59e0adfc33c76f2e2cf40038.mp4" , 98)]
-    
+    let arr = [("https://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_5mb.mp4", 27),
+               ("http://techslides.com/demos/sample-videos/small.mp4" , 5) ]
     private var holderView : UIView!
     private var videoLayer : AVPlayerLayer!
     
